@@ -64,7 +64,7 @@
                  Grid.Column="1"
                  Grid.Row="0" />
           <Image x:Name="CloseButton"
-                 Source="{x:Static constants:ImageConstants.CloseButtonImage}"
+                 Source="{DynamicResource AlertCloseIcon}"
                  Grid.Column="2"
                  Grid.Row="0"
                  VerticalOptions="Center"

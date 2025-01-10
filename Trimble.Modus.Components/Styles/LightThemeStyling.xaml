@@ -523,5 +523,13 @@
   <x:String x:Key="InputBlueInfoOutlineIcon">blue_info_outline_icon.png</x:String>
   <x:String x:Key="InputErrorOutlineIcon">error_icon_outline.png</x:String>
   <x:String x:Key="InputSuccessOutlineIcon">success_icon_outline.png</x:String>
-
+  <x:String x:Key="AlertCloseIcon">modus_close_icon.png</x:String>
+  <x:String x:Key="ToastSuccessIcon">valid_icon.png</x:String>
+  <x:String x:Key="ToastCloseIcon">black_close_icon.png</x:String>
+  <x:String x:Key="ToastWarningIcon">warning_icon.png</x:String>
+  <x:String x:Key="ToastDefaultInfoIcon">grey_info_icon.png</x:String>
+  <x:String x:Key="ToastDangerIcon">toast_danger_icon.png</x:String>
+  <x:String x:Key="ToastSecondaryInfoIcon">toast_secondary_info_icon.png</x:String>
+  <x:String x:Key="ToastPrimaryInfoIcon">blue_info_solid_icon.png</x:String>
+  <x:String x:Key="ToastPrimaryCloseIcon">blue_close_icon.png</x:String>
 </ResourceDictionary>

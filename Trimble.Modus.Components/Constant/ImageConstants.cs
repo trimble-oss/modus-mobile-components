@@ -16,6 +16,7 @@ namespace Trimble.Modus.Components.Constant
         public const string ToastWhiteCloseIcon = "white_close_icon.png";
         public const string ToastDangerIcon = "toast_danger_icon.png";
         public const string ToastDarkThemeIcon = "toast_dark_icon.png";
+        public const string WhiteInfoIcon = "white_info_outline_icon.png";
         public const string SolidHelpIcon = "solid_help_icon.png";
         public const string WarningIcon = "warning_icon.png";
         public const string ValidIcon = "valid_icon.png";

@@ -117,39 +117,39 @@ public partial class TMToastContents : PopupPage
         ToastTheme theme = (ToastTheme)Enum.Parse(typeof(ToastTheme), toastTheme);
         switch (theme)
         {
-            case ToastTheme.Dark:
-                leftIconImage.Source = ImageSource.FromFile(ImageConstants.ToastDarkThemeIcon);
+            case ToastTheme.Dark:               
+                leftIconImage.Source = ImageSource.FromFile(ImageConstants.WhiteInfoIcon);
                 closeButton.Source = ImageSource.FromFile(ImageConstants.ToastWhiteCloseIcon);
                 break;
 
             case ToastTheme.Primary:
-                closeButton.Source = ImageSource.FromFile(ImageConstants.ToastBlueCloseIcon);
-                leftIconImage.Source = ImageSource.FromFile(ImageConstants.BlueInfoIcon);
+                closeButton.SetDynamicResource(ImageButton.SourceProperty, "ToastPrimaryCloseIcon");
+                leftIconImage.SetDynamicResource(Image.SourceProperty, "ToastPrimaryInfoIcon");
                 break;
 
             case ToastTheme.Secondary:
-                closeButton.Source = ImageSource.FromFile(ImageConstants.ToastBlackCloseIcon);
-                leftIconImage.Source = ImageSource.FromFile(ImageConstants.SolidHelpIcon);
+                closeButton.SetDynamicResource(ImageButton.SourceProperty, "ToastCloseIcon");
+                leftIconImage.SetDynamicResource(Image.SourceProperty, "ToastSecondaryInfoIcon");
                 break;
 
             case ToastTheme.Danger:
-                closeButton.Source = ImageSource.FromFile(ImageConstants.ToastBlackCloseIcon);
-                leftIconImage.Source = ImageSource.FromFile(ImageConstants.ToastDangerIcon);
+                closeButton.SetDynamicResource(ImageButton.SourceProperty, "ToastCloseIcon");
+                leftIconImage.SetDynamicResource(Image.SourceProperty, "ToastDangerIcon");
                 break;
 
             case ToastTheme.Warning:
-                closeButton.Source = ImageSource.FromFile(ImageConstants.ToastBlackCloseIcon);
-                leftIconImage.Source = ImageSource.FromFile(ImageConstants.WarningIcon);
+                closeButton.SetDynamicResource(ImageButton.SourceProperty, "ToastCloseIcon");
+                leftIconImage.SetDynamicResource(Image.SourceProperty, "ToastWarningIcon");
                 break;
 
             case ToastTheme.Success:
-                closeButton.Source = ImageSource.FromFile(ImageConstants.ToastBlackCloseIcon);
-                leftIconImage.Source = ImageSource.FromFile(ImageConstants.ValidIcon);
+                leftIconImage.SetDynamicResource(Image.SourceProperty, "ToastSuccessIcon");
+                closeButton.SetDynamicResource(ImageButton.SourceProperty, "ToastCloseIcon");
                 break;
 
             default:
-                closeButton.Source = ImageSource.FromFile(ImageConstants.ToastBlackCloseIcon);
-                leftIconImage.Source = ImageSource.FromFile(ImageConstants.GreyInfoIcon);
+                closeButton.SetDynamicResource(ImageButton.SourceProperty, "ToastCloseIcon");
+                leftIconImage.SetDynamicResource(Image.SourceProperty, "ToastDefaultInfoIcon");
                 break;
         }
         UpdateIconColor();
